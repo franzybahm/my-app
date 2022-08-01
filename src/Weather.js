@@ -7,14 +7,12 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function Weather(props) {
     if (props.loaded) {
-        {/*let iconURL = `https://openweathermap.org/img/wn/${props.weatherInfo.icon}@4x.png`;*/ }
         return (
             <div class="row">
                 <div class="col-10 shadow p-3 mb-5 bg-body rounded current-weather">
                     <div class="row">
                         <div class="col-4 big-weather">
                             <WeatherIcon code={props.weatherInfo.icon} />
-                            {/*<img src={iconURL} alt="sunny" id="weather-icon"></img>*/}
                         </div>
                         <div class="col-4">
                             <h2 id="current-city">{props.weatherInfo.cityName}</h2>
