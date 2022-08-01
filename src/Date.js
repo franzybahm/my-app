@@ -10,8 +10,7 @@ export default function Date(props) {
         "Friday",
         "Saturday"
     ];
-    let x = props.date.getDay();
-    let day = days[x];
+    let day = days[props.date.getDay()];
 
     let hour = props.date.getHours();
     if (hour < 10) {
