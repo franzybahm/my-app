@@ -12,8 +12,10 @@ export default function Border() {
                     <Search />
                     {/*<Forecast />*/}
                 </div>
-                <a href="https://github.com/franzybahm/my-app">Coded by Franziska Wolf</a>
             </div>
+            <footer>
+                <a href="https://github.com/franzybahm/my-app">Coded by Franziska Wolf</a>
+            </footer>
         </div>
     );
 }

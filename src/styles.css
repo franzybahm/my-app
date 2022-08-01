@@ -46,6 +46,11 @@ button {
     margin: 10px auto 10px 0px;
 }
 
+a {
+    text-decoration: none;
+    color: #505050;
+}
+
 .main {
     display: block;
     margin: 0 auto;
