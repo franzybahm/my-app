@@ -12,7 +12,7 @@ export default function Weather(props) {
                 <div class="col-10 shadow p-3 mb-5 bg-body rounded current-weather">
                     <div class="row">
                         <div class="col-4 big-weather">
-                            <WeatherIcon code={props.weatherInfo.icon} />
+                            <WeatherIcon code={props.weatherInfo.icon} size={200} />
                         </div>
                         <div class="col-4">
                             <h2 id="current-city">{props.weatherInfo.cityName}</h2>
