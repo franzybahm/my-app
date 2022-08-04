@@ -1,6 +1,14 @@
 import React from "react";
+import axios from "axios";
 
-export default function Forecast() {
+export default function Forecast(props) {
+    function handleResponse(response) {
+        console.log(response.data);
+    }
+    let apiKey = "cf1b1343a7207aa60910085fc2251ee5";
+    let apiUrl = `api.openweathermap.org/data/2.5/forecast/daily?lat=${props.coords.lat}&lon=${props.coords.lon}&cnt=5&appid=${apiKey}&units=metric`
+
+    axios.get(apiUrl).then(handleResponse);
 
     return (
         <div class="next-days" id="forecast">
@@ -51,5 +59,6 @@ export default function Forecast() {
             </div>
         </div>
     );
+
 
 }
