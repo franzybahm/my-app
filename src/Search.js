@@ -81,20 +81,7 @@ export default function Search() {
                         </div>
                     </form>
                 </div>
-                <div className="col-2">
-                    <button className="search" id="search-button">
-                        <span role="img" ariaLabel="search">
-                            🔍
-                        </span>
-                    </button>
-                </div>
-                <div class="col-2">
-                    <button className="search" id="location-button">
-                        <span role="img" ariaLabel="current location">
-                            📍
-                        </span>
-                    </button>
-                </div>
+               
                 <h2>Waiting for your search...</h2>
             </div>
         )
